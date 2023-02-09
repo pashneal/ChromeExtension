@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1>Hello Extensions</h1>
+    <script type="module">
+      import init from "./pkg/dafuq.js";
+      init("./pkg/dafuq_bg.wasm").then(wasm => {
+        
+        if (wasm.__wbindgen_start == undefined) {
+          wasm.main();
+        }
+
+      });
+    <script>
+    <script src="popup.js"></script>
+  </body>
+</html>

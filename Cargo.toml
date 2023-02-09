@@ -1,0 +1,13 @@
+[package]
+name = "dafuq"
+version = "0.1.0"
+edition = "2021"
+author = "Neal Powell <pashneal@gmail.com>"
+
+[dependencies]
+wasm-bindgen = "0.2.84"
+yew = { version = "0.20.0", features = ["csr"] }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
